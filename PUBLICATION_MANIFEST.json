@@ -51,5 +51,68 @@
   "origin_artifacts": {
     "1.docx": "f6654d3be27dd1ca2f6d070799b3d60a04dc82a9bf6cafd8a3944f9cf15a4730",
     "arch_image.png": "be8d1024a6db8b2bafd56e1b1c06b6e5c4e2bd5e90e44f35b697aa82e07d3134"
-  }
+  },
+  "checkpoint_archives_200k": [
+    {
+      "path": "checkpoints/200k/jev-200k-step007500-inference.zip",
+      "bytes": 58194091,
+      "sha256": "e2deb8d89355054400ce95b2a7d1694a24f9a41820996e853c78d4e6482bb6b9",
+      "step": 7500,
+      "base_model": "Qwen/Qwen3.5-2B",
+      "inference_only": true,
+      "source_archive_sha256": "9ba804601a636eb9e9da03f0b862082f580c0c9391e92d5aadfdab8ae9ad2ca7",
+      "adapter_weights_sha256": "d3eb06219e8e4b87c012c525b3a0236fafc1a88f98aaa27354215b869afc9f09",
+      "score_head_sha256": "ddb91a0a7666fcd1b0670d40862f37be16a9a8d09e51e0420af62dfb846428e6"
+    },
+    {
+      "path": "checkpoints/200k/jev-200k-step009000-inference.zip",
+      "bytes": 58189399,
+      "sha256": "63c7cb24862cf1c2d368ca126a726f6c4683ca3ee89bcdd94b99910cecab55e8",
+      "step": 9000,
+      "base_model": "Qwen/Qwen3.5-2B",
+      "inference_only": true,
+      "source_archive_sha256": "b624bea94016271beeb6fa4bfe29a213100bc2f5bdf896740aef3e631a9feed6",
+      "adapter_weights_sha256": "7d59d191d34f6782229310a8b23373bd10a9fb4cae6ce925978818b5e0be4d0f",
+      "score_head_sha256": "01231121cbb1c8cac5bc2e1da7e1213d32142cc39d872334f0d3750ba3342afd"
+    },
+    {
+      "path": "checkpoints/200k/jev-200k-step010000-inference.zip",
+      "bytes": 58189892,
+      "sha256": "52d6abace844649e1ac166bbdd1292732ea3afb45f623a0df2a5cc6c1560d44f",
+      "step": 10000,
+      "base_model": "Qwen/Qwen3.5-2B",
+      "inference_only": true,
+      "source_archive_sha256": "9ba804601a636eb9e9da03f0b862082f580c0c9391e92d5aadfdab8ae9ad2ca7",
+      "adapter_weights_sha256": "80b89e3a221f4c1720c0ffc845914f4da84a1ee82c7ece8bcfeec198c78a7f7c",
+      "score_head_sha256": "43d508222494d418d38f193cb9bac00f97e9af73b131df0856a1fad7049d51cb"
+    },
+    {
+      "path": "checkpoints/200k/jev-200k-step012500-inference.zip",
+      "bytes": 58189816,
+      "sha256": "b2cb7cd79f8a0ba8891512d0ca8034cb458363982424ca0cbc985d0b37bc124f",
+      "step": 12500,
+      "base_model": "Qwen/Qwen3.5-2B",
+      "inference_only": true,
+      "source_archive_sha256": "9e5895ff12d006d2469123a09e8ea074aeaded583001d635ffd18de9cd2d785b",
+      "adapter_weights_sha256": "07aef62bcb7b341828498bb312b96fb9d46be3ef3a118ca88e757a624b17ab8c",
+      "score_head_sha256": "0e86a0c1e8ca12d83b959510e4ff76f0c5677e0d83008b3996ad623822e2c05d"
+    }
+  ],
+  "code_files_200k": [
+    "datasets/prepare_200k.py",
+    "jev/cluster_200k.sbatch",
+    "jev/cpu_preprocess.py",
+    "jev/decision_template.py",
+    "jev/fast_runtime.py",
+    "jev/full_batch_runtime.py",
+    "jev/predict_200k.py",
+    "jev/reference_delta.py",
+    "jev/requirements_200k.txt",
+    "jev/run_200k.sh",
+    "jev/shared_prefix_training.py",
+    "jev/train_200k.py",
+    "scripts/evaluate_200k_arrivals.py",
+    "scripts/expand_lora.py",
+    "scripts/verify_shared_training.py"
+  ]
 }

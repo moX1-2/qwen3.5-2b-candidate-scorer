@@ -1,0 +1,5 @@
+-r requirements.txt
+torchvision==0.25.0
+pillow>=12,<13
+pyarrow>=20,<26
+huggingface_hub>=1.0,<3
